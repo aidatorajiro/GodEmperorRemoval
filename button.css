@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'DotGothic';
+    src: url('DotGothic16-Regular.ttf');
+}
+
+body {
+    width: 300px;
+    font-family: 'DotGothic';
+    color: #090e30;
+}
+
+h1 {
+  text-align: center;
+  margin:15px;
+  padding:0px;
+}
+
+#counterBar {
+  text-align: center;
+  font-size: 16px;
+}
+
+button {
+  font-family: 'DotGothic';
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: #090e30;
+  background: #c2c4d1;
+}
+
+#enableButton {
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+#enableButton.enabled {
+  background: #2bd672;
+}
+
+#methodsList {
+  text-align:center;
+}
+
+.methodsOption {
+  margin: 3px;
+  padding: 3px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.methodsOption.enabled {
+  background: #f29411;
+}
