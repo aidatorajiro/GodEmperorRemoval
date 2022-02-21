@@ -12,7 +12,7 @@ function set_storage_with_default (key, default_value){
 
 chrome.runtime.onInstalled.addListener(() => {
   set_storage_with_default("counter", 0);
-  set_storage_with_default("is_enabled", false);
+  set_storage_with_default("is_enabled", true);
   set_storage_with_default("method", "かんたん");
   //chrome.storage.sync.set({ "counter": 0 });
   //chrome.storage.sync.set({ "is_enabled": false });
