@@ -36,16 +36,16 @@ function mainReplacementFunction () {
                     chrome.storage.sync.get("counter", ({counter}) => {
                         chrome.storage.sync.set({counter: counter + i})
                     })
+                    
+                    let timeB = new Date().getTime();
+                    
+                    console.log("Replacement time: " + String(timeB - timeA))
+                    
+                    setTimeout(mainReplacementFunction, 1000)
                 }
             })
         }
     });
-    
-    let timeB = new Date().getTime();
-    
-    //console.log("Replacement time: " + timeB - timeA)
-    
-    setTimeout(mainReplacementFunction, Math.max((timeB - timeA)*200, 1000))
 }
 
 window.addEventListener("load", () => {
