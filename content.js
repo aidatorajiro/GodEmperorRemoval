@@ -41,7 +41,7 @@ function mainReplacementFunction () {
                     
                     console.log("Replacement time: " + String(timeB - timeA))
                     
-                    setTimeout(mainReplacementFunction, 1000)
+                    setTimeout(mainReplacementFunction, Math.min(Math.max((timeB - timeA)*25, 1000), 5000))
                 }
             })
         }
