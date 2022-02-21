@@ -1,7 +1,7 @@
 // Initialize button with user's preferred color
 let enableButton = document.getElementById("enableButton");
 
-let methods = ["かんたん", "機械学習(1)"]
+let methods = ["かんたん", "機械学習(まだだよ！)"]
 let methods_to_elem = {}
 
 for (let x of methods) {
