@@ -31,7 +31,7 @@ function mainReplacementFunction () {
                     
                     replaceInText(document.body, /天皇/g, ()=>{i++; return rs(["点","店","展","転","添","篆","典","貼","添","填","貂","恬","ten"]) + rs(["脳","嚢","能","農","膿","悩","濃","応","王","喃","納","know"])})
                     
-                    console.log("Total match : " + i);
+                    //console.log("Total match : " + i);
                     
                     chrome.storage.sync.get("counter", ({counter}) => {
                         chrome.storage.sync.set({counter: counter + i})
@@ -43,7 +43,7 @@ function mainReplacementFunction () {
     
     let timeB = new Date().getTime();
     
-    console.log(timeB - timeA)
+    //console.log("Replacement time: " + timeB - timeA)
     
     setTimeout(mainReplacementFunction, Math.max((timeB - timeA)*200, 1000))
 }
